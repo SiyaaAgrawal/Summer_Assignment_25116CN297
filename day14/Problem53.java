@@ -1,0 +1,23 @@
+import java.util.*;
+public class Problem53{
+    public static int search(int arr[],int key){
+        for(int i=0;i<arr.length;i++){
+            if(arr[i]==key){
+                return i;
+
+            }
+        }
+        return-1;
+    }
+    public static void main (String[] args){
+        int arr[]={3,10,5,7};
+        int key=10;
+        int result=search(arr,key);
+        if(result!=-1){
+            System.out.println("Element found at index:"+result);
+        }else{
+            System.out.println("elements not found:");
+        }
+
+    }
+}
